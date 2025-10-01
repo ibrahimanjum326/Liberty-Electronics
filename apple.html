@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Apple - LibertyElectronics</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+    </head>
+    <style>
+.brand-banner {
+  position: relative;
+  height: 300px; /* adjust as needed */
+  background: url('./img/apple-banner.jpeg') no-repeat center center;
+  background-size: 100% 100%; /* force stretch */
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  color: #fff;
+}
+
+
+
+        .brand-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+        }
+
+        .brand-banner h2 {
+            position: relative;
+            font-size: 80px;
+            font-weight: bold;
+            color: #f3bbbb;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+	<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="#" class="logo">
+									<img src="./img/logo.png" alt="">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									<select class="input-select">
+										<option value="0">All Categories</option>
+										<option value="1">Category 01</option>
+										<option value="1">Category 02</option>
+									</select>
+									<input class="input" placeholder="Search here">
+									<button class="search-btn">Search</button>
+								</form>
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Wishlist -->
+								<div>
+									<a href="#">
+										<i class="fa fa-heart-o"></i>
+										<span>Your Wishlist</span>
+										<div class="qty">2</div>
+									</a>
+								</div>
+								<!-- /Wishlist -->
+
+								<!-- Cart -->
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Your Cart</span>
+										<div class="qty">3</div>
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="/img/product01.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">product name goes here</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/product02.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">product name goes here</a></h3>
+													<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+										</div>
+										<div class="cart-summary">
+											<small>3 Item(s) selected</small>
+											<h5>SUBTOTAL: $2940.00</h5>
+										</div>
+										<div class="cart-btns">
+											<a href="cart.html">View Cart</a>
+											<a href="checkout.html">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation"style="background-color: #e9e7e7;">
+  <!-- container --> 
+  <div class="container">
+    <!-- responsive-nav -->
+    <div id="responsive-nav">
+      <!-- NAV -->
+      <ul class="main-nav nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hotdeals.html">Hot Deals</a></li>
+
+        <!-- Dropdown for Brands -->
+        <li class="dropdown">
+          <a href="#" class="active" class="dropdown-toggle" data-toggle="dropdown">Brands <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="apple.html">Apple</a></li>
+            <li><a href="samsung.html">Samsung</a></li>
+            <li><a href="dell.html">Dell</a></li>
+            <li><a href="sony.html">Sony</a></li>
+            <li><a href="hp.html">HP</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">About</a></li>
+      </ul>
+      <!-- /NAV -->
+    </div>
+    <!-- /responsive-nav -->
+  </div>
+  <!-- /container -->
+</nav>
+
+		<!-- /NAVIGATION -->
+
+
+    <!-- Banner -->
+    <div class="brand-banner">
+        <h2>Apple</h2>
+    </div>
+<br><br><br><br>
+    <!-- Products -->
+    <div class="container mt-5 mb-5">
+
+        <!-- iPhones -->
+        <h3 class="mb-4">iPhones</h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product10.webp" alt="iPhone 14 Pro"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPhone</p>
+                        <h3 class="product-name"><a href="#">iPhone 14 Pro</a></h3>
+                        <h4 class="product-price">$1199 <del class="product-old-price">$1299</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product11.webp" alt="iPhone 14"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPhone</p>
+                        <h3 class="product-name"><a href="#">iPhone 14</a></h3>
+                        <h4 class="product-price">$999 <del class="product-old-price">$1099</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product12.jpg" alt="iPhone 13 Pro"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPhone</p>
+                        <h3 class="product-name"><a href="#">iPhone 13 Pro</a></h3>
+                        <h4 class="product-price">$1099 <del class="product-old-price">$1199</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product13.jpg" alt="iPhone 13"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPhone</p>
+                        <h3 class="product-name"><a href="#">iPhone 13</a></h3>
+                        <h4 class="product-price">$899 <del class="product-old-price">$999</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product14.jpg" alt="iPhone SE"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPhone</p>
+                        <h3 class="product-name"><a href="#">iPhone SE (2022)</a></h3>
+                        <h4 class="product-price">$499 <del class="product-old-price">$549</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- iPads -->
+        <h3 class="mt-5 mb-4">iPads</h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product15.jpg" alt="iPad Pro"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPad</p>
+                        <h3 class="product-name"><a href="#">iPad Pro 12.9</a></h3>
+                        <h4 class="product-price">$999 <del class="product-old-price">$1100</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product16.jpg" alt="iPad Air"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPad</p>
+                        <h3 class="product-name"><a href="#">iPad Air 5</a></h3>
+                        <h4 class="product-price">$599 <del class="product-old-price">$699</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product17.jpg" alt="iPad Mini"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPad</p>
+                        <h3 class="product-name"><a href="#">iPad Mini 6</a></h3>
+                        <h4 class="product-price">$499 <del class="product-old-price">$599</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product18.jpg" alt="iPad 10th Gen"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPad</p>
+                        <h3 class="product-name"><a href="#">iPad 10th Gen</a></h3>
+                        <h4 class="product-price">$449 <del class="product-old-price">$549</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product19.jpg" alt="iPad 9th Gen"></div>
+                    <div class="product-body">
+                        <p class="product-category">iPad</p>
+                        <h3 class="product-name"><a href="#">iPad 9th Gen</a></h3>
+                        <h4 class="product-price">$329 <del class="product-old-price">$399</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apple Watches -->
+        <h3 class="mt-5 mb-4">Apple Watches</h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product20.jpg" alt="Apple Watch Series 8"></div>
+                    <div class="product-body">
+                        <p class="product-category">Watch</p>
+                        <h3 class="product-name"><a href="#">Apple Watch Series 8</a></h3>
+                        <h4 class="product-price">$399 <del class="product-old-price">$450</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product21.jpg" alt="Apple Watch Ultra"></div>
+                    <div class="product-body">
+                        <p class="product-category">Watch</p>
+                        <h3 class="product-name"><a href="#">Apple Watch Ultra</a></h3>
+                        <h4 class="product-price">$799 <del class="product-old-price">$899</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product22.jpg" alt="Apple Watch SE"></div>
+                    <div class="product-body">
+                        <p class="product-category">Watch</p>
+                        <h3 class="product-name"><a href="#">Apple Watch SE</a></h3>
+                        <h4 class="product-price">$279 <del class="product-old-price">$329</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product23.jpg" alt="Apple Watch Series 7"></div>
+                    <div class="product-body">
+                        <p class="product-category">Watch</p>
+                        <h3 class="product-name"><a href="#">Apple Watch Series 7</a></h3>
+                        <h4 class="product-price">$349 <del class="product-old-price">$399</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+        </div>
+<br><br><br><br><br><br><br>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function () {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let subtotal = 0;
+
+    function updateCart() {
+        $(".cart-list").empty();
+        subtotal = 0;
+
+        cart.forEach((item, index) => {
+            let total = item.price * item.qty;
+            subtotal += total;
+
+            $(".cart-list").append(`
+                <div class="product-widget">
+                    <div class="product-img">
+                        <img src="${item.img}" alt="">
+                    </div>
+                    <div class="product-body">
+                        <h3 class="product-name"><a href="#">${item.name}</a></h3>
+                        <h4 class="product-price"><span class="qty">${item.qty}x</span>$${item.price.toFixed(2)}</h4>
+                    </div>
+                    <button class="delete" data-index="${index}"><i class="fa fa-close"></i></button>
+                </div>
+            `);
+        });
+
+        $(".cart-summary small").text(cart.length + " Item(s) selected");
+        $(".cart-summary h5").text("SUBTOTAL: $" + subtotal.toFixed(2));
+        $(".header-ctn .qty").text(cart.length);
+
+        // Save to localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+    // Initialize cart on page load
+    updateCart();
+
+    // Add to cart
+    $(".add-to-cart-btn").click(function () {
+        let product = $(this).closest(".product");
+        let name = product.find(".product-name a").text();
+        let price = parseFloat(product.find(".product-price").text().replace("$", "").split(" ")[0]);
+        let img = product.find("img").attr("src");
+
+        // Check if product already exists
+        let existing = cart.findIndex(p => p.name === name);
+        if (existing !== -1) {
+            cart[existing].qty += 1; // increase qty
+        } else {
+            cart.push({ name, price, img, qty: 1 }); // add new with qty
+        }
+
+        updateCart();
+    });
+
+    // Delete from cart
+    $(document).on("click", ".cart-list .delete", function () {
+        let index = $(this).data("index");
+        cart.splice(index, 1);
+        updateCart();
+    });
+});
+</script>
+
+</body>
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">About Us</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Categories</h3>
+								<ul class="footer-links">
+									<li><a href="#">Hot deals</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Smartphones</a></li>
+									<li><a href="#">Cameras</a></li>
+									<li><a href="#">Accessories</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Information</h3>
+								<ul class="footer-links">
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Orders and Returns</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Service</h3>
+								<ul class="footer-links">
+									<li><a href="#">My Account</a></li>
+									<li><a href="#">View Cart</a></li>
+									<li><a href="#">Wishlist</a></li>
+									<li><a href="#">Track My Order</a></li>
+									<li><a href="#">Help</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->
+
+			<!-- bottom footer -->
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<ul class="footer-payments">
+								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+							</ul>
+							<span class="copyright">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</span>
+						</div>
+					</div>
+						<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /bottom footer -->
+		</footer>
+		<!-- /FOOTER -->
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hot Deals - Liberty Electronics</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+  <style>
+    .hotdeals-banner {
+      position: relative;
+      height: 300px;
+
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hotdeals-banner h1 {
+      position: relative;
+      font-size: 70px;
+      font-weight: bold;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <!-- TOP HEADER -->
+    <div id="top-header">
+      <div class="container">
+        <ul class="header-links pull-left">
+          <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+          <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+          <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+        </ul>
+        <ul class="header-links pull-right">
+          <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+          <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- MAIN HEADER -->
+    <div id="header">
+      <div class="container">
+        <div class="row">
+          <!-- LOGO -->
+          <div class="col-md-3">
+            <div class="header-logo">
+              <a href="index.html" class="logo">
+                <img src="./img/logo.png" alt="">
+              </a>
+            </div>
+          </div>
+          <!-- SEARCH BAR -->
+          <div class="col-md-6">
+            <div class="header-search">
+              <form>
+                <select class="input-select">
+                  <option value="0">All Categories</option>
+                  <option value="1">Laptops</option>
+                  <option value="2">Mobiles</option>
+                </select>
+                <input class="input" placeholder="Search here">
+                <button class="search-btn">Search</button>
+              </form>
+            </div>
+          </div>
+          <!-- ACCOUNT -->
+          <div class="col-md-3 clearfix">
+            <div class="header-ctn">
+              <!-- Wishlist -->
+              <div>
+                <a href="#"><i class="fa fa-heart-o"></i> <span>Your Wishlist</span> <div class="qty">2</div></a>
+              </div>
+              <!-- Cart -->
+              <div class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>Your Cart</span>
+                  <div class="qty">0</div>
+                </a>
+                <div class="cart-dropdown">
+                  <div class="cart-list"></div>
+                  <div class="cart-summary">
+                    <small>0 Item(s) selected</small>
+                    <h5>SUBTOTAL: $0.00</h5>
+                  </div>
+                  <div class="cart-btns">
+                    <a href="cart.html">View Cart</a>
+                    <a href="checkout.html">Checkout <i class="fa fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Menu Toogle -->
+              <div class="menu-toggle">
+                <a href="#"><i class="fa fa-bars"></i><span>Menu</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav id="navigation" style="background-color:#e9e7e7;">
+    <div class="container">
+      <div id="responsive-nav">
+        <ul class="main-nav nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="hotdeals.html">Hot Deals</a></li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown">Brands <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="apple.html">Apple</a></li>
+              <li><a href="samsung.html">Samsung</a></li>
+              <li><a href="dell.html">Dell</a></li>
+              <li><a href="sony.html">Sony</a></li>
+              <li><a href="hp.html">HP</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="hotdeals-banner">
+    <h1>Hot Deals</h1>
+  </div>
+
+  <!-- Deals Section -->
+  <div class="container mt-5 mb-5">
+    <h3 class="mb-4">🔥 Exclusive Discounts</h3>
+    <div class="row">
+      <!-- Deal 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/product05.png" alt="Dell Inspiron 15">
+            <div class="product-label"><span class="sale">-20%</span></div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Laptop</p>
+            <h3 class="product-name"><a href="#">Dell Inspiron 15</a></h3>
+            <h4 class="product-price">$640 <del class="product-old-price">$800</del></h4>
+          </div>
+          <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></div>
+        </div>
+      </div>
+      <!-- Deal 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/product06.png" alt="iPhone 14">
+            <div class="product-label"><span class="sale">-15%</span></div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Mobile</p>
+            <h3 class="product-name"><a href="#">iPhone 14</a></h3>
+            <h4 class="product-price">$849 <del class="product-old-price">$999</del></h4>
+          </div>
+          <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></div>
+        </div>
+      </div>
+      <!-- Deal 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/product07.png" alt="Sony WH-1000XM4">
+            <div class="product-label"><span class="sale">-25%</span></div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Headphones</p>
+            <h3 class="product-name"><a href="#">Sony WH-1000XM4</a></h3>
+            <h4 class="product-price">$299 <del class="product-old-price">$399</del></h4>
+          </div>
+          <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></div>
+        </div>
+      </div>
+      <!-- Deal 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="product">
+          <div class="product-img">
+            <img src="./img/product08.png" alt="HP 24 FHD Monitor">
+            <div class="product-label"><span class="sale">-30%</span></div>
+          </div>
+          <div class="product-body">
+            <p class="product-category">Monitor</p>
+            <h3 class="product-name"><a href="#">HP 24-inch FHD Monitor</a></h3>
+            <h4 class="product-price">$139 <del class="product-old-price">$199</del></h4>
+          </div>
+          <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background:#222; color:#aaa; padding:40px 0; text-align:center;">
+    <p>&copy; 2025 Liberty Electronics. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let subtotal = 0;
+
+      function updateCart() {
+        $(".cart-list").empty();
+        subtotal = 0;
+        cart.forEach((item, index) => {
+          subtotal += item.price;
+          $(".cart-list").append(`
+            <div class="product-widget">
+              <div class="product-img"><img src="${item.img}" alt=""></div>
+              <div class="product-body">
+                <h3 class="product-name"><a href="#">${item.name}</a></h3>
+                <h4 class="product-price"><span class="qty">1x</span>$${item.price.toFixed(2)}</h4>
+              </div>
+              <button class="delete" data-index="${index}"><i class="fa fa-close"></i></button>
+            </div>
+          `);
+        });
+        $(".cart-summary small").text(cart.length + " Item(s) selected");
+        $(".cart-summary h5").text("SUBTOTAL: $" + subtotal.toFixed(2));
+        $(".header-ctn .qty").text(cart.length);
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+
+      updateCart();
+
+      $(".add-to-cart-btn").click(function () {
+        let product = $(this).closest(".product");
+        let name = product.find(".product-name a").text();
+        let price = parseFloat(product.find(".product-price").text().replace("$", "").split(" ")[0]);
+        let img = product.find("img").attr("src");
+        cart.push({ name, price, img });
+        updateCart();
+      });
+
+      $(document).on("click", ".cart-list .delete", function () {
+        let index = $(this).data("index");
+        cart.splice(index, 1);
+        updateCart();
+      });
+    });
+  </script>
+</body>
+</html>

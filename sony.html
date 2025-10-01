@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sony - LibertyElectronics</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <style>
+        .brand-banner {
+            position: relative;
+            height: 300px;
+            background: url('./img/sony-banner.jpg') no-repeat center center;
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            color: #fff;
+        }
+
+        .brand-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+        }
+
+        .brand-banner h2 {
+            position: relative;
+            font-size: 80px;
+            font-weight: bold;
+            color: #f3e1bb;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- TOP HEADER -->
+        <div id="top-header">
+            <div class="container">
+                <ul class="header-links pull-left">
+                    <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+                </ul>
+                <ul class="header-links pull-right">
+                    <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+                    <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /TOP HEADER -->
+
+        <!-- MAIN HEADER -->
+        <div id="header">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- LOGO -->
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="#" class="logo">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /LOGO -->
+
+                    <!-- SEARCH BAR -->
+                    <div class="col-md-6">
+                        <div class="header-search">
+                            <form>
+                                <select class="input-select">
+                                    <option value="0">All Categories</option>
+                                    <option value="1">Category 01</option>
+                                    <option value="1">Category 02</option>
+                                </select>
+                                <input class="input" placeholder="Search here">
+                                <button class="search-btn">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /SEARCH BAR -->
+
+                    <!-- ACCOUNT -->
+                    <div class="col-md-3 clearfix">
+                        <div class="header-ctn">
+                            <!-- Wishlist -->
+                            <div>
+                                <a href="#">
+                                    <i class="fa fa-heart-o"></i>
+                                    <span>Your Wishlist</span>
+                                    <div class="qty">2</div>
+                                </a>
+                            </div>
+                            <!-- /Wishlist -->
+
+                            <!-- Cart -->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span>Your Cart</span>
+                                    <div class="qty">3</div>
+                                </a>
+                                <div class="cart-dropdown">
+                                    <div class="cart-list">
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <img src="/img/product01.png" alt="">
+                                            </div>
+                                            <div class="product-body">
+                                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                <h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+                                            </div>
+                                            <button class="delete"><i class="fa fa-close"></i></button>
+                                        </div>
+
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <img src="./img/product02.png" alt="">
+                                            </div>
+                                            <div class="product-body">
+                                                <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                <h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+                                            </div>
+                                            <button class="delete"><i class="fa fa-close"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-summary">
+                                        <small>3 Item(s) selected</small>
+                                        <h5>SUBTOTAL: $2940.00</h5>
+                                    </div>
+                                    <div class="cart-btns">
+                                        <a href="cart.html">View Cart</a>
+                                        <a href="checkout.html">Checkout <i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Cart -->
+
+                            <!-- Menu Toogle -->
+                            <div class="menu-toggle">
+                                <a href="#">
+                                    <i class="fa fa-bars"></i>
+                                    <span>Menu</span>
+                                </a>
+                            </div>
+                            <!-- /Menu Toogle -->
+                        </div>
+                    </div>
+                    <!-- /ACCOUNT -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- /MAIN HEADER -->
+    </header>
+    <!-- /HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav id="navigation" style="background-color: #e9e7e7;">
+        <div class="container">
+            <div id="responsive-nav">
+                <ul class="main-nav nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hotdeals.html">Hot Deals</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active" data-toggle="dropdown">Brands <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="apple.html">Apple</a></li>
+                            <li><a href="samsung.html">Samsung</a></li>
+                            <li><a href="dell.html">Dell</a></li>
+                            <li><a href="sony.html">Sony</a></li>
+                            <li><a href="hp.html">HP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="brand-banner">
+        <h2>Sony</h2>
+    </div>
+
+    <br><br><br><br>
+
+    <!-- Products -->
+    <div class="container mt-5 mb-5">
+
+        <!-- Xperia Mobiles -->
+        <h3 class="mb-4">Xperia Mobiles</h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product07.png" alt="Xperia 1 V"></div>
+                    <div class="product-body">
+                        <p class="product-category">Mobile</p>
+                        <h3 class="product-name"><a href="#">Sony Xperia 1 V</a></h3>
+                        <h4 class="product-price">$1199 <del class="product-old-price">$1299</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product07.png" alt="Xperia 5 IV"></div>
+                    <div class="product-body">
+                        <p class="product-category">Mobile</p>
+                        <h3 class="product-name"><a href="#">Sony Xperia 5 IV</a></h3>
+                        <h4 class="product-price">$999 <del class="product-old-price">$1099</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product07.png" alt="Xperia 10 IV"></div>
+                    <div class="product-body">
+                        <p class="product-category">Mobile</p>
+                        <h3 class="product-name"><a href="#">Sony Xperia 10 IV</a></h3>
+                        <h4 class="product-price">$499 <del class="product-old-price">$599</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product07.png" alt="Xperia Pro"></div>
+                    <div class="product-body">
+                        <p class="product-category">Mobile</p>
+                        <h3 class="product-name"><a href="#">Sony Xperia Pro</a></h3>
+                        <h4 class="product-price">$1999 <del class="product-old-price">$2099</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product07.png" alt="Xperia Ace III"></div>
+                    <div class="product-body">
+                        <p class="product-category">Mobile</p>
+                        <h3 class="product-name"><a href="#">Sony Xperia Ace III</a></h3>
+                        <h4 class="product-price">$299 <del class="product-old-price">$349</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Headphones & Audio -->
+        <h3 class="mt-5 mb-4">Headphones & Audio</h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product02.png" alt="Sony WH-1000XM5"></div>
+                    <div class="product-body">
+                        <p class="product-category">Headphone</p>
+                        <h3 class="product-name"><a href="#">WH-1000XM5</a></h3>
+                        <h4 class="product-price">$399 <del class="product-old-price">$449</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product02.png" alt="Sony WH-1000XM4"></div>
+                    <div class="product-body">
+                        <p class="product-category">Headphone</p>
+                        <h3 class="product-name"><a href="#">WH-1000XM4</a></h3>
+                        <h4 class="product-price">$299 <del class="product-old-price">$349</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product02.png" alt="Sony WF-1000XM4"></div>
+                    <div class="product-body">
+                        <p class="product-category">Earbuds</p>
+                        <h3 class="product-name"><a href="#">WF-1000XM4</a></h3>
+                        <h4 class="product-price">$249 <del class="product-old-price">$299</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product02.png" alt="Sony LinkBuds"></div>
+                    <div class="product-body">
+                        <p class="product-category">Earbuds</p>
+                        <h3 class="product-name"><a href="#">Sony LinkBuds</a></h3>
+                        <h4 class="product-price">$179 <del class="product-old-price">$199</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product02.png" alt="Sony ExtraBass"></div>
+                    <div class="product-body">
+                        <p class="product-category">Headphone</p>
+                        <h3 class="product-name"><a href="#">Sony ExtraBass</a></h3>
+                        <h4 class="product-price">$129 <del class="product-old-price">$149</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Smart Wearables -->
+        <h3 class="mt-5 mb-4">Smart Wearables</h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product20.jpg" alt="Sony SmartWatch 3"></div>
+                    <div class="product-body">
+                        <p class="product-category">Wearable</p>
+                        <h3 class="product-name"><a href="#">Sony SmartWatch 3</a></h3>
+                        <h4 class="product-price">$199 <del class="product-old-price">$249</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product20.jpg" alt="Sony SmartBand 2"></div>
+                    <div class="product-body">
+                        <p class="product-category">Wearable</p>
+                        <h3 class="product-name"><a href="#">Sony SmartBand 2</a></h3>
+                        <h4 class="product-price">$149 <del class="product-old-price">$179</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product20.jpg" alt="Sony Xperia Ear Duo"></div>
+                    <div class="product-body">
+                        <p class="product-category">Wearable</p>
+                        <h3 class="product-name"><a href="#">Xperia Ear Duo</a></h3>
+                        <h4 class="product-price">$229 <del class="product-old-price">$279</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product">
+                    <div class="product-img"><img src="./img/product20.jpg" alt="Sony SmartWatch 2"></div>
+                    <div class="product-body">
+                        <p class="product-category">Wearable</p>
+                        <h3 class="product-name"><a href="#">Sony SmartWatch 2</a></h3>
+                        <h4 class="product-price">$149 <del class="product-old-price">$179</del></h4>
+                    </div>
+                    <div class="add-to-cart"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
+                            cart</button></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let subtotal = 0;
+
+            function updateCart() {
+                $(".cart-list").empty();
+                subtotal = 0;
+                cart.forEach((item, index) => {
+                    subtotal += item.price;
+                    $(".cart-list").append(`
+            <div class="product-widget">
+              <div class="product-img"><img src="${item.img}" alt=""></div>
+              <div class="product-body">
+                <h3 class="product-name"><a href="#">${item.name}</a></h3>
+                <h4 class="product-price"><span class="qty">1x</span>$${item.price.toFixed(2)}</h4>
+              </div>
+              <button class="delete" data-index="${index}"><i class="fa fa-close"></i></button>
+            </div>
+          `);
+                });
+                $(".cart-summary small").text(cart.length + " Item(s) selected");
+                $(".cart-summary h5").text("SUBTOTAL: $" + subtotal.toFixed(2));
+                $(".header-ctn .qty").text(cart.length);
+                localStorage.setItem("cart", JSON.stringify(cart));
+            }
+
+            updateCart();
+
+            $(".add-to-cart-btn").click(function () {
+                let product = $(this).closest(".product");
+                let name = product.find(".product-name a").text();
+                let price = parseFloat(product.find(".product-price").text().replace("$", "").split(" ")[0]);
+                let img = product.find("img").attr("src");
+                cart.push({ name, price, img });
+                updateCart();
+            });
+
+            $(document).on("click", ".cart-list .delete", function () {
+                let index = $(this).data("index");
+                cart.splice(index, 1);
+                updateCart();
+            });
+        });
+    </script>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <!-- top footer -->
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut.</p>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Hot deals</a></li>
+                                <li><a href="#">Laptops</a></li>
+                                <li><a href="#">Smartphones</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="clearfix visible-xs"></div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Information</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Orders and Returns</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Service</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">View Cart</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Track My Order</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /top footer -->
+
+        <!-- bottom footer -->
+        <div id="bottom-footer" class="section">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="footer-payments">
+                            <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+                            <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+                        </ul>
+                        <span class="copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </span>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /bottom footer -->
+    </footer>
+    <!-- /FOOTER -->
+</body>
+
+</html>
